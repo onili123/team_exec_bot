@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 import discord.app_commands
 import os
+import random
 
 TOKEN = os.getenv("DISCORD_TOKEN")
 
@@ -25,6 +26,8 @@ async def たたく(ctx):
 
 @bot.command()
 async def 占い(ctx):
-    await ctx.send('占い')
+    uranai = ["大吉","中吉","吉","末吉"]
+    choice = random.choice(uranai)
+    await ctx.send(choice)
 
 bot.run(TOKEN)
