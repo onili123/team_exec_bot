@@ -22,4 +22,9 @@ async def なでる(ctx):
 async def たたく(ctx):
     await ctx.send(':cat: うわーん')
 
+
+@bot.command()
+async def 占い(ctx):
+    await ctx.send('占い')
+
 bot.run(TOKEN)
