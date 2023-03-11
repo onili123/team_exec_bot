@@ -26,8 +26,8 @@ async def たたく(ctx):
 
 @bot.command()
 async def 占い(ctx):
-    uranai = ["大吉","中吉","吉","末吉"]
-    choice = random.choice(uranai)
+    uranai_list = ["大吉","中吉","吉","末吉"]
+    choice = random.choice(uranai_list)
     await ctx.send(choice)
 
 bot.run(TOKEN)
